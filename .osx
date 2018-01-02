@@ -250,6 +250,12 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
 
+# Configure the layout of the clock on the menu bar
+defaults write com.apple.menuextra.clock "DateFormat" 'EEE MMM d  h:mm:ss a'
+
+# Show battery percentage
+defaults write com.apple.menuextra.battery "ShowPercent" 'YES'
+
 # Set the icon size of Dock items
 defaults write com.apple.dock tilesize -int 30
 
